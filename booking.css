@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(gambar/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.navbar {
+    text-align: right;
+    width: 100%;
+    height: 150px;
+    background: rgba(38, 167, 232, 0.1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar img{
+    padding-left:20px ;
+    align-items: left;
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.navbar p{
+    color: gold;
+    align-items: left;
+    display: flex;
+    margin: auto;
+    font-size: 70px;
+    margin-left: 5px;
+    
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li a{
+    color: seashell;
+    margin-left: 20px;
+    padding-right : 50px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 10px;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: gold;
+}
+.container{
+    padding-top: 100px;
+}
+.bookingForm{
+    color: white;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid white;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(214, 209, 209, 0.1);
+}
+.bookingForm p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}

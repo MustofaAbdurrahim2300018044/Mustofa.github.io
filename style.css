@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(gambar/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.navbar {
+    text-align: right;
+    width: 100%;
+    height: 150px;
+    background: rgba(38, 167, 232, 0.1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar img{
+    padding-left:20px ;
+    align-items: left;
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.navbar p{
+    color: gold;
+    align-items: left;
+    display: flex;
+    margin: auto;
+    font-size: 70px;
+    margin-left: 5px;
+    
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li a{
+    color: seashell;
+    margin-left: 20px;
+    padding-right : 50px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 10px;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: gold;
+}
+.container{
+    width: 100%;
+    position:absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+.content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.content-item{
+    height: 500px;
+    width: 310px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    background-size: 100% 100%;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px 20px;
+    position: relative;
+}
+.content-item img{
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ffff;
+
+}
+.content-item p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    text-align: left;
+}
+.content-item a{
+ color: white;
+ position: absolute;
+ bottom:5%;
+ left: 25%;
+ font-size: 20px;
+ border: 1px solid #ffff;
+ border-radius: 5px;
+ background: rgba(255, 255, 255, 0.1);
+ backdrop-filter: blur(10px);
+ text-decoration: none;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content-item a:hover{
+    background-color: gold;
+    backdrop-filter: blur(10px);
+}
+.nota {
+    color: #000;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    max-width: 400px; /* Ensuring it doesn't get too wide */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+}
+.nota p{
+    color: #000;
+    font-weight: bold;
+}

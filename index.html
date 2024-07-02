@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Bintang 5</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="gambar/logo.jpg" alt="logo">
+        <p>SPIRITUS HOTEL</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="kontak.php">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="content-item">
+                <img src="gambar/kamar1.jpg" alt="kamar1">
+                <p>KAMAR 1</p>
+                <p >Harga : Rp.- 200.000</p>
+                <p>Status : <span id="status1">Tersedia</span></p>
+                <a href="pemesanan.html" id="pesan1" onclick="ubahStatus('status1', 'pesan1')">PESAN KAMAR INI</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <img src="gambar/kamar2.jpg" alt="kamar2">
+                <p>KAMAR 2</p>
+                <p>Harga : Rp.- 100.000</p>
+                <p>Status : <span id="status2">Tersedia</span></p>
+                <a href="pemesanan.html" id="pesan2" onclick="ubahStatus('status2', 'pesan2')">PESAN KAMAR INI</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <img src="gambar/kamar3.jpg" alt="kamar3">
+                <p>KAMAR 3</p>
+                <p>Harga : Rp.- 300.000</p>
+                <p>Status : <span id="status3">Tersedia</span></p>
+                <a href="pemesanan.html" id="pesan1" onclick="ubahStatus('status3', 'pesan3')">PESAN KAMAR INI</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function ubahStatus(idStatus, idButton) {
+            var statusElement = document.getElementById(idStatus);
+            statusElement.textContent = 'Telah Dipesan';
+            
+            var buttonElement = document.getElementById(idButton);
+            buttonElement.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
